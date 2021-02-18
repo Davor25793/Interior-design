@@ -9,7 +9,7 @@
   <link rel="stylesheet" href="css/main.css">
   <title>Design website</title>
 </head>
-<body>
+<body id="home">
   
   <div class="container">
     <div class="hamburger-menu">
@@ -22,8 +22,8 @@
         <img src="images/bg.jpg" alt="">
       </div>
       <div class="banner">
-        <h1>Architecture & Interior Design</h1>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Error, illum.</p>
+        <h1>Inovation Ideas & Home Remodeling</h1>
+        <p>Top remodeling experts share tips and tricks to make sure your project goes off without a hitch.</p>
         <button>Discover now</button>
       </div>
     </header>
@@ -35,19 +35,16 @@
       </div>
       <ul class="list">
         <li>
-          <a class="link" href="#" data-content="Home">Home</a>
+          <a class="link nav-link" href="#home" data-content="Home">Home</a>
         </li>
         <li>
-          <a class="link" href="#" data-content="About">About</a>
+          <a class="link nav-link" href="#about" data-content="About">About</a>
         </li>
         <li>
-          <a class="link" href="#" data-content="Team">Team</a>
+          <a class="link nav-link" href="#team" data-content="Team">Team</a>
         </li>
         <li>
-          <a class="link" href="#" data-content="Services">Services</a>
-        </li>
-        <li>
-          <a class="link" href="#" data-content="Contact">Contact</a>
+          <a class="link nav-link" href="#contact" data-content="Contact">Contact</a>
         </li>
       </ul>
       <div class="social">
@@ -59,7 +56,7 @@
     </div>
 
     <!--ABOUT US-->
-    <section class="about-us">
+    <section id="about" class="about-us">
       <div class="section-header">
         <h1 class="section-heading">About Us</h1>
         <div class="underline"></div>
@@ -108,10 +105,97 @@
             <p class="service-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi fuga explicabo non blanditiis consequatur expedita, eius numquam corporis corrupti sunt, laboriosam, doloribus dolorum. Fuga, natus?</p>
           </div>
           <div class="about-us-img-wrapper">
-            <img src="images/house.png" alt="house">
+            <img src="images/house.jpg" alt="house">
           </div>
         </div>
     </section>
+
+    <!--TEAM-->
+    <section id="team" class="team">
+       <div class="section-header">
+        <h1 class="section-heading">Our Team</h1>
+        <div class="underline"></div>
+      </div>
+      <div class="cards-wrapper">
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="images/person-1.jpg" alt="person1">
+          </div>
+          <div class="card-info">
+            <h2>Luke Hemington</h2>
+            <h3>Lead designer</h3>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro!"</p>
+            <button>Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="images/person-2.jpg" alt="person1">
+          </div>
+          <div class="card-info">
+            <h2>Tiffany Simpson</h2>
+            <h3>Developer</h3>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro!"</p>
+            <button>Read more</button>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-img-wrapper">
+            <img src="images/person-3.jpg" alt="person1">
+          </div>
+          <div class="card-info">
+            <h2>Skylar Williams</h2>
+            <h3>Project manager</h3>
+            <p>"Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam, porro!"</p>
+            <button>Read more</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--Contact-->
+    <section id="contact" class="contact">
+      <div class="contact-wrapper">
+        <div class="contact-left">
+          <img src="images/contact-bg.jpg" alt="">
+        </div>
+        <div class="contact-right">
+          <h1 class="contact-heading">Contact</h1>
+          <form>
+            <div class="input-group">
+              <input type="text" class="field">
+              <label for="input-label">Full Name</label>
+            </div>
+            <div class="input-group">
+              <input type="email" class="field">
+              <label for="input-label">Email</label>
+            </div>
+            <div class="input-group">
+              <textarea class="field"></textarea>
+              <label class="message">Message</label>
+            </div>
+            <input type="submit" class="submit-btn" value="Submit">
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!--FOOTER-->
+    <footer class="footer">
+      <div class="container">
+      <div class="footer-container">
+        <p>&copy; Copyright, all rights reserved. February 2021.</p>
+        <div class="icons">
+          <i class="fab fa-facebook"></i>
+          <i class="fab fa-linkedin"></i>
+          <i class="fab fa-instagram"></i>
+        </div>
+        <a href="#home" class="up-btn nav-link">
+          <i class="fas fa-arrow-up"></i>
+        </a>
+      </div>
+     </div>
+    </footer>
   </div>
 
   <script src="app.js"></script>
